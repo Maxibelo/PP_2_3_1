@@ -19,12 +19,12 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
-    public List<User> index() {
+    public List<User> getAllUsers() {
         return userDAO.index();
     }
 
     @Override
-    public User show(int id) {
+    public User getById(int id) {
         return userDAO.show(id);
     }
 
